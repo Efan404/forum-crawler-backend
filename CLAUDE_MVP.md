@@ -329,23 +329,23 @@ celery_app.conf.beat_schedule = {
 ### Phase 3: 抓取和任务（Day 4-5）
 
 #### 3.1 RSS 抓取器
-- [ ] 创建 `app/fetchers.py`
-  - [ ] `fetch_v2ex_feed()`
-  - [ ] `fetch_nodeseek_feed()`
-  - [ ] `fetch_linux_do_feed()`
-  - [ ] `fetch_feed()` 工厂函数
-  - [ ] `match_keywords()` 关键词匹配
+- [x] 创建 `app/fetchers.py`
+  - [x] `fetch_v2ex_feed()`
+  - [x] `fetch_nodeseek_feed()`
+  - [x] `fetch_linux_do_feed()`
+  - [x] `fetch_feed()` 工厂函数
+  - [x] `match_keywords()` 关键词匹配
 
 #### 3.2 Celery 配置
-- [ ] 创建 `app/tasks.py`
-  - [ ] Celery app 配置
-  - [ ] `fetch_all_topics` 任务
-  - [ ] Beat schedule 配置
+- [x] 创建 `app/tasks.py`
+  - [x] Celery app 配置
+  - [x] `fetch_all_topics` 任务
+  - [x] Beat schedule 配置
 
 #### 3.3 测试任务
-- [ ] 手动触发任务测试
-- [ ] 验证数据保存
-- [ ] 验证去重逻辑
+- [x] 手动触发任务测试
+- [x] 验证数据保存
+- [x] 验证去重逻辑
 
 ### Phase 4: Docker 化（Day 6）
 
