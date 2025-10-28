@@ -306,25 +306,25 @@ celery_app.conf.beat_schedule = {
 ### Phase 2: API 开发（Day 2-3）
 
 #### 2.1 CRUD 层
-- [ ] 创建 `app/crud.py`
-  - [ ] Topic CRUD 函数
-  - [ ] Post 查询函数
-  - [ ] PushLog 查询函数
+- [x] 创建 `app/crud.py`
+  - [x] Topic CRUD 函数
+  - [x] Post 查询函数
+  - [x] PushLog 查询函数
 
 #### 2.2 FastAPI 路由
-- [ ] 创建 `app/main.py`
-  - [ ] 健康检查 `/health`
-  - [ ] Topics 路由（5 个端点）
-  - [ ] Posts 路由（1 个端点）
-  - [ ] Logs 路由（1 个端点）
-  - [ ] System 路由（1 个端点）
-- [ ] CORS 中间件配置
-- [ ] 异常处理
+- [x] 创建 `app/main.py`
+  - [x] 健康检查 `/health`
+  - [x] Topics 路由（5 个端点）
+  - [x] Posts 路由（1 个端点）
+  - [x] Logs 路由（1 个端点）
+  - [x] System 路由（1 个端点）
+- [x] CORS 中间件配置
+- [x] 异常处理
 
 #### 2.3 测试
-- [ ] 测试 Topics CRUD
-- [ ] 测试 Posts 查询
-- [ ] 测试分页和筛选
+- [x] 测试 Topics CRUD
+- [x] 测试 Posts 查询
+- [x] 测试分页和筛选
 
 ### Phase 3: 抓取和任务（Day 4-5）
 
