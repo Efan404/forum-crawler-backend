@@ -11,6 +11,7 @@ dependencies = [
     "sqlalchemy[asyncio]==2.0.23",
     "alembic==1.12.1",
     "asyncpg==0.29.0",
+    "psycopg[binary]==3.1.12",
     "celery==5.3.4",
     "redis==5.0.1",
     "httpx==0.25.2",
@@ -28,6 +29,9 @@ dev-dependencies = [
     "pytest-asyncio==0.21.1",
     "black==23.11.0",
 ]
+
+[tool.setuptools]
+packages = ["app"]
 
 [build-system]
 requires = ["setuptools>=61.0"]

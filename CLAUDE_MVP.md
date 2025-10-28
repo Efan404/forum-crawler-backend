@@ -350,14 +350,14 @@ celery_app.conf.beat_schedule = {
 ### Phase 4: Docker 化（Day 6）
 
 #### 4.1 容器配置
-- [ ] 创建 `Dockerfile`（多阶段构建）
-- [ ] 创建 `docker-compose.yml`（开发环境）
-- [ ] 创建 `docker-compose.prod.yml`（生产环境）
+- [x] 创建 `Dockerfile`（多阶段构建）
+- [x] 创建 `docker-compose.yml`（开发环境）
+- [x] 创建 `docker-compose.prod.yml`（生产环境）
 
 #### 4.2 本地测试
-- [ ] 使用 docker-compose 启动所有服务
-- [ ] 测试服务间通信
-- [ ] 测试数据持久化
+- [x] 使用 docker-compose 启动所有服务
+- [x] 测试服务间通信
+- [x] 测试数据持久化
 
 ### Phase 5: 部署（Day 7）
 
