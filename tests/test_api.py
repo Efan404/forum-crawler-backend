@@ -6,7 +6,7 @@ import pytest
 from httpx import AsyncClient
 
 from app.models import Post, PushLog, Topic
-from tests.conftest import AsyncSessionWrapper
+from .conftest import AsyncSessionWrapper
 
 
 @pytest.mark.asyncio
