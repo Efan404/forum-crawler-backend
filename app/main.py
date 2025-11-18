@@ -15,6 +15,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from . import crud, schemas
+from .config import settings
 from .database import get_async_session
 
 
@@ -22,7 +23,7 @@ app = FastAPI(title="Tech Forum Monitor API", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=settings.FRONTEND_ORIGINS.split(",") if settings.FRONTEND_ORIGINS else [],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

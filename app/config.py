@@ -18,6 +18,7 @@ class Settings(BaseSettings):
     redis_url: str
     celery_broker_url: Optional[str] = None
     celery_result_backend: Optional[str] = None
+    FRONTEND_ORIGINS: str = ""
 
     @field_validator("celery_broker_url", "celery_result_backend", mode="before")
     @classmethod

@@ -5,6 +5,7 @@ x-app-environment: &app-environment
   CELERY_BROKER_URL: redis://redis:6379/0
   CELERY_RESULT_BACKEND: redis://redis:6379/0
   ENVIRONMENT: development
+  FRONTEND_ORIGINS: ${FRONTEND_ORIGINS:-http://localhost:3000,http://localhost:5173}
 
 x-app-volumes: &app-volumes
   - ./app:/app/app
