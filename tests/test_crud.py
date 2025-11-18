@@ -6,7 +6,7 @@ import pytest
 
 from app import crud, schemas
 from app import models
-from tests.conftest import AsyncSessionWrapper
+from .conftest import AsyncSessionWrapper
 
 
 @pytest.mark.asyncio
